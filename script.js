@@ -1,37 +1,37 @@
-// custom-script.js
-(function() {
-  // Ensure script runs after DOM is loaded (prevents errors)
-  document.addEventListener("DOMContentLoaded", function() {
-    // Button Text and Functionality (replace with your desired behavior)
-    const buttonText = "My Custom Button";
-    const buttonClickFunction = function() {
-      alert("Custom Button Clicked!");
-    };
+// // custom-script.js
+// (function() {
+//   // Ensure script runs after DOM is loaded (prevents errors)
+//   document.addEventListener("DOMContentLoaded", function() {
+//     // Button Text and Functionality (replace with your desired behavior)
+//     const buttonText = "My Custom Button";
+//     const buttonClickFunction = function() {
+//       alert("Custom Button Clicked!");
+//     };
 
-    // Create a new button element
-    const button = document.createElement("button");
-    button.textContent = buttonText;
-    button.addEventListener("click", buttonClickFunction);
-    button.style.position = 'relative';
-    button.style.marginTop = '10px'; // Adjust as needed
-    button.style.backgroundColor = '#007bff';
-    button.style.color = 'white';
-    button.style.border = 'none';
-    button.style.padding = '10px 20px';
-    button.style.fontSize = '16px';
-    button.style.cursor = 'pointer';
-    button.style.borderRadius = '5px';
+//     // Create a new button element
+//     const button = document.createElement("button");
+//     button.textContent = buttonText;
+//     button.addEventListener("click", buttonClickFunction);
+//     button.style.position = 'relative';
+//     button.style.marginTop = '10px'; // Adjust as needed
+//     button.style.backgroundColor = '#007bff';
+//     button.style.color = 'white';
+//     button.style.border = 'none';
+//     button.style.padding = '10px 20px';
+//     button.style.fontSize = '16px';
+//     button.style.cursor = 'pointer';
+//     button.style.borderRadius = '5px';
 
-    // **Important:**  This section targets a specific element based on class name. You might need to adjust the selector based on your theme.
-    const cartSummary = document.querySelector(".cart__summary");
-    if (cartSummary) {
-      // Append the button to the cart summary section
-      cartSummary.appendChild(button);
-    } else {
-      console.error("Unable to find cart summary element. Button not injected.");
-    }
-  });
-})();
+//     // **Important:**  This section targets a specific element based on class name. You might need to adjust the selector based on your theme.
+//     const cartSummary = document.querySelector(".cart__summary");
+//     if (cartSummary) {
+//       // Append the button to the cart summary section
+//       cartSummary.appendChild(button);
+//     } else {
+//       console.error("Unable to find cart summary element. Button not injected.");
+//     }
+//   });
+// })();
 
 // Wait for the DOM to be fully loaded
 if (window.location.pathname.endsWith('/cart')) {
