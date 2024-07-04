@@ -1,5 +1,5 @@
 // Wait for the DOM to be fully loaded
-if (window.location.pathname.endsWith('/cart')) {
+if (window.location.pathname.endsWith('/cart') || window.location.pathname.endsWith('/cart/')) {
         // The cart page has loaded
         console.log('Cart page loaded');
 
@@ -27,7 +27,7 @@ if (window.location.pathname.endsWith('/cart')) {
 
             // Add click event listener to navigate to YouTube
             button.addEventListener('click', function() {
-                window.location.href = 'https://sa-traders47.myshopify.com/apps/proxy';
+                window.location.href = '/apps/myapp';
             });
 
             // Insert the button after the 'title-wrapper-with-link' div
